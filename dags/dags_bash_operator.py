@@ -25,4 +25,4 @@ with DAG(
     bash_command="echo $HOSTNAME",
     )
 
-    bash_t1 >> bast_t2 #task 수행 순서
+    bash_t1 >> bash_t2 #task 수행 순서
