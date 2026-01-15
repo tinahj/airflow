@@ -30,6 +30,14 @@ with DAG(
         task_id = "t5"
     )
 
+    t6 = EmptyOperator(
+        task_id = "t6"
+    )
+
+    t7 = EmptyOperator(
+        task_id = "t7"
+    )
+
     t1 >> [t2, t3] >> t4
     t5 >> t4
     [t4, t7] >> t6 >> t8
