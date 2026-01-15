@@ -6,7 +6,7 @@ from airflow.providers.standard.operators.empty import EmptyOperator
 with DAG(
     dag_id = "dags_conn_test",
     schedule = None,
-    start_date = pendulum.datetime(2023, 3, 1, tz = "Asia/Seoul"),
+    start_date = pendulum.datetime(2025, 1, 16, tz = "Asia/Seoul"),
     catchup = False
 ) as dag:
     
