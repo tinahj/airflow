@@ -17,7 +17,7 @@ with DAG(
     bash_t2 = BashOperator(
         task_id = 'bash_t2',
         env={
-            'START_DATE' : '{{data_inerval_start | ds}}', #ds:YYY-MM-DD 형태 10자리 출력
+            'START_DATE' : '{{data_interval_start | ds}}', #ds:YYY-MM-DD 형태 10자리 출력
             'END_DATE' : '{{data_interval_end | ds}}'
         },
         bash_command = 'echo $START_DATE && echo $END_DATE' #&& : 앞에 있는 COMMAND($START_DATE) 성공하면 뒤에 COMMAND도 실행
